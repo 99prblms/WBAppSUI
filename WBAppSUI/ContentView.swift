@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(spacing: 20) {
+        VStack(spacing: 70) {
             
             Image(.onBoardPic)
                 .resizable()
@@ -21,20 +21,29 @@ struct ContentView: View {
             Text("Общайтесь с друзьями и близкими легко")
                 .padding()
                 .font(.title)
+                .multilineTextAlignment(.center)
             
-            Button("Пользовательское соглашение") {
-                showSheet.toggle()
+            
+            VStack(spacing: 30) {
+                
+                Button("Пользовательское соглашение") {
+                    showSheet.toggle()
+                }
+                .sheet(isPresented: $showSheet) {
+                    Text("Тут будет пользовательское соглашение")
+                        .presentationDetents([.large, .medium, .fraction(0.75)])
+                }
+                
+                Button("Начать общаться") {
+                    
+                    
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.accentColor)
+                .cornerRadius(30)
+                .frame(width: 327, height: 52, alignment: .center)
+                .font(.title)
             }
-            .sheet(isPresented: $showSheet) {
-                Text("Тут будет пользовательское соглашение")
-                    .presentationDetents([.large, .medium, .fraction(0.75)])
-            }
-            Button("Начать общаться") {
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.accentColor)
-            .cornerRadius(20)
-            .frame(width: 200, height: 30)
         }
     }
 }
