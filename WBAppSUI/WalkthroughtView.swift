@@ -39,7 +39,7 @@ struct WalkthroughtView: View {
                     NavigationLink(destination: VerificationView()) {
                         Text("Начать общаться")
                             .frame(width: 327, height: 50)
-                            .background(Color.accentColor)
+                            .background(Color.WB)
                             .foregroundColor(Color.white)
                             .cornerRadius(30)
                     }
