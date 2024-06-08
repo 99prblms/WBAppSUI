@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct VerificationView: View {
-    @State private var showSheet: Bool = false
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         
-        VStack(spacing: 70) {
-            
-            Image(.onBoardPic)
-                .resizable()
-                .frame(width: 300, height: 300)
-            
-            Text("Верификация тут")
-                .padding()
-                .font(.title)
+        VStack(spacing: 10) {
+            Text("Введите номер телефона")
+                .font(.system(size: 24))
                 .multilineTextAlignment(.center)
+                .frame(width: 400)
+                .fontWeight(.bold)
+                .offset(x: 0, y: -160)
+            
+            Text("Мы вышлем код подтверждения на указанный номер")
+                .font(.system(size: 14))
+                .multilineTextAlignment(.center)
+                .frame(width: 300)
+                .offset(x: 0, y: -160)
         }
     }
 }
