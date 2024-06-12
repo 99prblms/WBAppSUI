@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactRow: View {
+struct ContactsView: View {
     
     @State private var searchText = ""
     @State var path: [Contacts]
@@ -93,6 +93,6 @@ struct ContactRow: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactRow(path: listContacts)
+        ContactsView(path: listContacts)
     }
 }

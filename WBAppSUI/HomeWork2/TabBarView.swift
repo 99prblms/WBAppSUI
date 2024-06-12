@@ -12,41 +12,54 @@ struct TabBarView: View {
     
     var body: some View {
         
-        ZStack(alignment: .bottom) {
-            TabView(selection: $selectTab) {
-                Text("Contacts")
-//                ContactsView()
-                    .tag("1")
-                    .tabItem {
-                        Image(.tabBarContactsPic)
-                    }
-                Text("Chats")
-                    .tag("2")
-                    .tabItem {
-                        Image(.tabBarChatsPic)
-                    }
-                Text("More")
-                    .tag("3")
-                    .tabItem {
-                        Image(.tabBarMorePic)
-                    }
-            }
-            HStack {
-                Button {
-                    selectTab = "1"
-                } label: {
-                    HStack {
-                        Image(.tabBarContactsPic)
-                    }
+        ZStack() {
+            VStack {
+                Spacer()
+                switch selectTab {
+                case "1":
+                    ContactsView(path: listContacts)
+                case "2":
+                    Text("Chats")
+                case "3":
+                    Text("More")
+                default:
+                    ContactsView(path: listContacts)
                 }
+                
+                Spacer()
+                
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        selectTab = "1"
+                    }) {
+                        VStack {
+                            selectTab == "1" ? Image(.tabBarContactsPic) : Image(.tabBarContacts)
+                        }
+                    }
+                    Spacer()
+                    Button(action: {
+                        selectTab = "2"
+                    }) {
+                        VStack {
+                            selectTab == "2" ? Image(.tabBarChatsPic) : Image(.tabBarChats)
+                        }
+                    }
+                    Spacer()
+                    Button(action: {
+                        selectTab = "3"
+                    }) {
+                        VStack {
+                            selectTab == "3" ? Image(.tabBarMorePiс) : Image(.tabBarMore)
+                        }
+                    }
+                    Spacer()
+                }
+                .padding(.bottom, 20)
             }
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: 65)
-        .background(.gray)
     }
 }
-
 #Preview {
     TabBarView()
 }
