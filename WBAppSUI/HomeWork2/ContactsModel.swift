@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Contacts: Hashable {
+public struct Contact: Hashable {
     let id = UUID()
     let name: String
     let lastSeen: String
@@ -16,13 +16,13 @@ public struct Contacts: Hashable {
     let imageName: String
 }
 
-public var listContacts: [Contacts] = [
-    Contacts(name: "Анастасия Иванова", lastSeen: "Last seen yesterday", isOnline: false, stories: false, imageName: "AnastasiaPic"),
-    Contacts(name: "Петя", lastSeen: "Online", isOnline: true, stories: false, imageName: "PetyaPic"),
-    Contacts(name: "Маман", lastSeen: "Last seen 3 hours ago", isOnline: false, stories: true, imageName: "MamanPic"),
-    Contacts(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, stories: false, imageName: "ArbuzPic"),
-    Contacts(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "NonPic"),
-    Contacts(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "NonPic")
+public var listContacts: [Contact] = [
+    Contact(name: "Анастасия Иванова", lastSeen: "Last seen yesterday", isOnline: false, stories: false, imageName: "AnastasiaPic"),
+    Contact(name: "Петя", lastSeen: "Online", isOnline: true, stories: false, imageName: "PetyaPic"),
+    Contact(name: "Маман", lastSeen: "Last seen 3 hours ago", isOnline: false, stories: true, imageName: "MamanPic"),
+    Contact(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, stories: false, imageName: "ArbuzPic"),
+    Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "NonPic"),
+    Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "NonPic")
 ]
 
 // Функция для получения инициалов из имени контакта

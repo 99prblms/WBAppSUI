@@ -8,25 +8,27 @@
 import SwiftUI
 
 struct ContactDetailView: View {
-    @Environment(\.dismiss) private var dismiss
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    var contact: Contact
     
     var body: some View {
-        
         VStack() {
-            Image(.changeAvatar)
+            Image(contact.imageName)
                 .resizable()
                 .frame(width: 200, height: 200)
                 .cornerRadius(250)
                 .offset(CGSize(width: 0, height: -140))
             VStack() {
-                Text("Иван Иванов")
+                Text(contact.name)
                     .font(.system(size: 24))
                     .multilineTextAlignment(.center)
                     .frame(width: 400)
                     .fontWeight(.bold)
                     .offset(CGSize(width: 0, height: -100))
 
-                Text("+7999-999-99-99")
+                Text("+7-999-99-99-909")
                     .font(.system(size: 20))
                     .multilineTextAlignment(.center)
                     .frame(width: 300)
@@ -56,6 +58,6 @@ struct ContactDetailView: View {
 
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView()
+        ContactDetailView(contact: listContacts[0])
     }
 }

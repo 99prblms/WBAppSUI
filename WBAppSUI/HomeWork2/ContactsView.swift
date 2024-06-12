@@ -10,7 +10,6 @@ import SwiftUI
 struct ContactsView: View {
     
     @State private var searchText = ""
-    @State var path: [Contacts]
     
     var body: some View {
         NavigationStack {
@@ -52,7 +51,7 @@ struct ContactsView: View {
                 
                 List {
                     ForEach(listContacts.filter { searchText.isEmpty ? true : $0.name.contains(searchText) }, id: \.self) { contact in
-                        NavigationLink(value: contact) {
+                        NavigationLink(destination: ContactDetailView(contact: contact)) {
                             HStack {
                                 Image(contact.imageName)
                                     .resizable()
@@ -93,6 +92,6 @@ struct ContactsView: View {
 
 struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView(path: listContacts)
+        ContactsView()
     }
 }

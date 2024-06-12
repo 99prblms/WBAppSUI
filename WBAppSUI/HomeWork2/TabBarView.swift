@@ -17,13 +17,13 @@ struct TabBarView: View {
                 Spacer()
                 switch selectTab {
                 case "1":
-                    ContactsView(path: listContacts)
+                    ContactsView()
                 case "2":
                     Text("Chats")
                 case "3":
-                    Text("More")
+                    WalkthroughtView()
                 default:
-                    ContactsView(path: listContacts)
+                    ContactsView()
                 }
                 
                 Spacer()
