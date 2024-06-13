@@ -26,7 +26,7 @@ public var listContacts: [Contact] = [
 ]
 
 // Функция для получения инициалов из имени контакта
-func initials(for name: String) -> String {
+public func initials(for name: String) -> String {
     let components = name.split(separator: " ")
     let initials = components.reduce("") { (result, component) in
         guard let firstCharacter = component.first else { return result }

@@ -10,9 +10,10 @@ import SwiftUI
 struct ContactsView: View {
     
     @State private var searchText = ""
+    @State private var path = NavigationPath()
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             VStack {
                 TextField("Search", text: $searchText)
                     .padding(.leading, 50)
@@ -51,39 +52,43 @@ struct ContactsView: View {
                 
                 List {
                     ForEach(listContacts.filter { searchText.isEmpty ? true : $0.name.contains(searchText) }, id: \.self) { contact in
-                        NavigationLink(destination: ContactDetailView(contact: contact)) {
-                            HStack {
-                                Image(contact.imageName)
-                                    .resizable()
-                                    .frame(width: 48, height: 48)
-                                    .padding(.trailing, 10)
-                                    .overlay(
-                                        HStack {
-                                            if contact.isOnline {
-                                                Image("StatusPic")
-                                                    .resizable()
-                                                    .frame(width: 17, height: 17)
-                                                    .offset(CGSize(width: 18, height: -19))
-                                            }
-                                            if contact.stories {
-                                                Image("StoriesPic")
-                                                    .resizable()
-                                                    .frame(width: 55, height: 55)
-                                                    .offset(CGSize(width: -5, height: 0))
-                                            }
+                        HStack {
+                            Image(contact.imageName)
+                                .resizable()
+                                .frame(width: 48, height: 48)
+                                .padding(.trailing, 10)
+                                .overlay(
+                                    HStack {
+                                        if contact.isOnline {
+                                            Image("StatusPic")
+                                                .resizable()
+                                                .frame(width: 17, height: 17)
+                                                .offset(CGSize(width: 18, height: -19))
                                         }
-                                    )
-                                VStack(alignment: .leading, spacing: 10) {
-                                    Text(contact.name)
-                                        .font(.system(size: 14))
-                                    Text(contact.lastSeen)
-                                        .font(.system(size: 12))
-                                        .foregroundColor(.gray)
-                                }
+                                        if contact.stories {
+                                            Image("StoriesPic")
+                                                .resizable()
+                                                .frame(width: 55, height: 55)
+                                                .offset(CGSize(width: -5, height: 0))
+                                        }
+                                    }
+                                )
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text(contact.name)
+                                    .font(.system(size: 14))
+                                Text(contact.lastSeen)
+                                    .font(.system(size: 12))
+                                    .foregroundColor(.gray)
                             }
-                            .padding(.vertical, 5)
+                        }
+                        .padding(.vertical, 5)
+                        .onTapGesture {
+                            path.append(contact)
                         }
                     }
+                }
+                .navigationDestination(for: Contact.self) { contact in
+                    ContactDetailView(contact: contact)
                 }
             }
         }

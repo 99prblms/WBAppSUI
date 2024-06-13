@@ -4,7 +4,6 @@
 //
 //  Created by Владислав Наумов on 10.06.2024.
 //
-
 import SwiftUI
 
 struct ContactDetailView: View {
@@ -14,13 +13,14 @@ struct ContactDetailView: View {
     var contact: Contact
     
     var body: some View {
-        VStack() {
+
+        VStack {
             Image(contact.imageName)
                 .resizable()
                 .frame(width: 200, height: 200)
                 .cornerRadius(250)
                 .offset(CGSize(width: 0, height: -140))
-            VStack() {
+            VStack {
                 Text(contact.name)
                     .font(.system(size: 24))
                     .multilineTextAlignment(.center)
@@ -35,7 +35,7 @@ struct ContactDetailView: View {
                     .foregroundColor(.gray)
                     .offset(CGSize(width: 0, height: -90))
             }
-            HStack() {
+            HStack {
                 Image(.twitterPic)
                     .resizable()
                     .frame(width: 72, height: 40)
@@ -50,14 +50,30 @@ struct ContactDetailView: View {
                     .frame(width: 72, height: 40)
             }
             .offset(CGSize(width: 0, height: -50))
-
         }
-
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(.backArrowPic)
+                        .resizable()
+                        .frame(width: 7.42, height: 12.02)
+                    Text("Профиль")
+                        .foregroundColor(.black)
+                    
+                }
+                
+            }
+        }
+        .navigationBarBackButtonHidden()
     }
 }
 
 struct ContactDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView(contact: listContacts[0])
+        NavigationView {
+            ContactDetailView(contact: listContacts[0])
+        }
     }
 }
