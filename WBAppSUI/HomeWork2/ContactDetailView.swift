@@ -11,9 +11,7 @@ struct ContactDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var contact: Contact
-    
     var body: some View {
-
         VStack {
             Image(contact.imageName)
                 .resizable()
@@ -27,7 +25,7 @@ struct ContactDetailView: View {
                     .frame(width: 400)
                     .fontWeight(.bold)
                     .offset(CGSize(width: 0, height: -100))
-
+                
                 Text("+7-999-99-99-909")
                     .font(.system(size: 20))
                     .multilineTextAlignment(.center)
@@ -61,9 +59,7 @@ struct ContactDetailView: View {
                         .frame(width: 7.42, height: 12.02)
                     Text("Профиль")
                         .foregroundColor(.black)
-                    
                 }
-                
             }
         }
         .navigationBarBackButtonHidden()
