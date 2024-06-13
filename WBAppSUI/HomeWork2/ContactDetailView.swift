@@ -61,6 +61,14 @@ struct ContactDetailView: View {
                         .foregroundColor(.black)
                 }
             }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {}) {
+                    Image(.editPic)
+                        .foregroundColor(.black)
+                        .font(.system(size: 18))
+                }
+                .padding()
+            }
         }
         .navigationBarBackButtonHidden()
     }
