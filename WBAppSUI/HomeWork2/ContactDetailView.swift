@@ -13,11 +13,21 @@ struct ContactDetailView: View {
     var contact: Contact
     var body: some View {
         VStack {
-            Image(contact.imageName)
-                .resizable()
-                .frame(width: 200, height: 200)
-                .cornerRadius(250)
-                .offset(CGSize(width: 0, height: -140))
+            if contact.avatar == true {
+                Image(contact.imageName)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .cornerRadius(250)
+                    .offset(CGSize(width: 0, height: -140))
+            } else {
+                Text(getInitials(name: contact.name))
+                    .font(.system(size: 60))
+                    .frame(width: 200, height: 200)
+                    .background(Color.WB)
+                    .foregroundColor(.white)
+                    .cornerRadius(250)
+                    .offset(CGSize(width: 0, height: -140))
+            }
             VStack {
                 Text(contact.name)
                     .font(.system(size: 24))
@@ -34,18 +44,26 @@ struct ContactDetailView: View {
                     .offset(CGSize(width: 0, height: -90))
             }
             HStack {
-                Image(.twitterPic)
-                    .resizable()
-                    .frame(width: 72, height: 40)
-                Image(.instaPic)
-                    .resizable()
-                    .frame(width: 72, height: 40)
-                Image(.linkedInPic)
-                    .resizable()
-                    .frame(width: 72, height: 40)
-                Image(.faceBookPic)
-                    .resizable()
-                    .frame(width: 72, height: 40)
+                Button(action: {}) {
+                    Image(.twitterPic)
+                        .foregroundColor(.black)
+                        .font(.system(size: 18))
+                }
+                Button(action: {}) {
+                    Image(.instaPic)
+                        .foregroundColor(.black)
+                        .font(.system(size: 18))
+                }
+                Button(action: {}) {
+                    Image(.linkedInPic)
+                        .foregroundColor(.black)
+                        .font(.system(size: 18))
+                }
+                Button(action: {}) {
+                    Image(.faceBookPic)
+                        .foregroundColor(.black)
+                        .font(.system(size: 18))
+                }
             }
             .offset(CGSize(width: 0, height: -50))
         }

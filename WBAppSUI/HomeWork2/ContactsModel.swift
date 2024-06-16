@@ -14,19 +14,19 @@ public struct Contact: Hashable {
     let isOnline: Bool
     let stories: Bool
     let imageName: String
+    let avatar: Bool
 }
 
 public var listContacts: [Contact] = [
-    Contact(name: "Анастасия Иванова", lastSeen: "Last seen yesterday", isOnline: false, stories: false, imageName: "AnastasiaPic"),
-    Contact(name: "Петя", lastSeen: "Online", isOnline: true, stories: false, imageName: "PetyaPic"),
-    Contact(name: "Маман", lastSeen: "Last seen 3 hours ago", isOnline: false, stories: true, imageName: "MamanPic"),
-    Contact(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, stories: false, imageName: "ArbuzPic"),
-    Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "NonPic"),
-    Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "NonPic")
+    Contact(name: "Анастасия Иванова", lastSeen: "Last seen yesterday", isOnline: false, stories: false, imageName: "AnastasiaPic", avatar: true),
+    Contact(name: "Петя", lastSeen: "Online", isOnline: true, stories: false, imageName: "PetyaPic", avatar: true),
+    Contact(name: "Маман", lastSeen: "Last seen 3 hours ago", isOnline: false, stories: true, imageName: "MamanPic", avatar: true),
+    Contact(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, stories: false, imageName: "ArbuzPic", avatar: true),
+    Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "", avatar: false),
+    Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "", avatar: false)
 ]
 
-// Функция для получения инициалов из имени контакта
-public func initials(for name: String) -> String {
+public func getInitials(name: String) -> String {
     let components = name.split(separator: " ")
     let initials = components.reduce("") { (result, component) in
         guard let firstCharacter = component.first else { return result }

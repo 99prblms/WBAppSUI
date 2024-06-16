@@ -53,26 +53,35 @@ struct ContactsView: View {
                 List {
                     ForEach(listContacts.filter { searchText.isEmpty ? true : $0.name.contains(searchText) }, id: \.self) { contact in
                         HStack {
-                            Image(contact.imageName)
-                                .resizable()
-                                .frame(width: 48, height: 48)
-                                .padding(.trailing, 10)
-                                .overlay(
-                                    HStack {
-                                        if contact.isOnline {
-                                            Image("StatusPic")
-                                                .resizable()
-                                                .frame(width: 17, height: 17)
-                                                .offset(CGSize(width: 18, height: -19))
-                                        }
-                                        if contact.stories {
-                                            Image("StoriesPic")
-                                                .resizable()
-                                                .frame(width: 55, height: 55)
-                                                .offset(CGSize(width: -5, height: 0))
-                                        }
-                                    }
-                                )
+                            ZStack {
+                                if contact.avatar {
+                                    Image(contact.imageName)
+                                        .resizable()
+                                        .frame(width: 48, height: 48)
+                                } else {
+                                    Text(getInitials(name: contact.name))
+                                        .font(.system(size: 18))
+                                        .frame(width: 48, height: 48)
+                                        .background(Color.WB)
+                                        .foregroundColor(.white)
+                                        .cornerRadius(14)
+                                }
+
+                                if contact.isOnline {
+                                    Image("StatusPic")
+                                        .resizable()
+                                        .frame(width: 17, height: 17)
+                                        .offset(x: 18, y: -19)
+                                }
+                                
+                                if contact.stories {
+                                    Image("StoriesPic")
+                                        .resizable()
+                                        .frame(width: 55, height: 55)
+                                }
+                            }
+                            .padding(.trailing, 10)
+                            
                             VStack(alignment: .leading, spacing: 10) {
                                 Text(contact.name)
                                     .font(.system(size: 14))
@@ -80,7 +89,9 @@ struct ContactsView: View {
                                     .font(.system(size: 12))
                                     .foregroundColor(.gray)
                             }
+                            Spacer()
                         }
+                        .contentShape(Rectangle())
                         .padding(.vertical, 5)
                         .onTapGesture {
                             path.append(contact)
