@@ -15,6 +15,15 @@ public struct Contact: Hashable {
     let stories: Bool
     let imageName: String
     let avatar: Bool
+    
+    static func placeholder() -> Contact {
+        return Contact(name: "Пусто", lastSeen: "", isOnline: false, stories: false, imageName: "", avatar: false)
+    }
+    
+    // Пример контакта для предпросмотра
+    static func example() -> Contact {
+        return Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "exampleImage", avatar: true)
+    }
 }
 
 public var listContacts: [Contact] = [
@@ -22,8 +31,8 @@ public var listContacts: [Contact] = [
     Contact(name: "Петя", lastSeen: "Online", isOnline: true, stories: false, imageName: "PetyaPic", avatar: true),
     Contact(name: "Маман", lastSeen: "Last seen 3 hours ago", isOnline: false, stories: true, imageName: "MamanPic", avatar: true),
     Contact(name: "Арбуз Дыня", lastSeen: "Online", isOnline: true, stories: false, imageName: "ArbuzPic", avatar: true),
-    Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "", avatar: false),
-    Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "", avatar: false)
+    Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "NonPic", avatar: false),
+    Contact(name: "Лиса Алиса", lastSeen: "Last seen 30 minutes ago", isOnline: false, stories: true, imageName: "NonPic", avatar: false)
 ]
 
 public func getInitials(name: String) -> String {
