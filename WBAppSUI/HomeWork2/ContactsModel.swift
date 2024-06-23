@@ -20,9 +20,8 @@ public struct Contact: Hashable {
         return Contact(name: "Пусто", lastSeen: "", isOnline: false, stories: false, imageName: "", avatar: false)
     }
     
-    // Пример контакта для предпросмотра
     static func example() -> Contact {
-        return Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "exampleImage", avatar: true)
+        return Contact(name: "Иван Иванов", lastSeen: "Online", isOnline: true, stories: false, imageName: "NonPic", avatar: true)
     }
 }
 
