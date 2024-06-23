@@ -71,8 +71,7 @@
 		19AA52DE2C283A8700648A86 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Bank.playground; path = ../../Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		19AA52E02C283EE000648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		19AA52E12C283EE000648A86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		19AA52E32C283EE600648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		19AA52E42C283EE600648A86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		19AA52E92C285BE700648A86 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Factory.playground; path = ../../Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		19BBD6F52C158E7100352271 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		19CA45EE2C17577900FEA019 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		19E1C8EA2C145164000D5178 /* WalkthroughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughtView.swift; sourceTree = "<group>"; };
@@ -102,10 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				1901D2732C102441003F2A03 /* WBAppSUI */,
-				19AA52E22C283EE600648A86 /* Frameworks */,
 				19741AF92C1EF9F700500147 /* WBAppWidget */,
 				19AA52DF2C283EE000648A86 /* Frameworks */,
 				19AA52DA2C28362200648A86 /* HomeWork4 */,
+				19AA52E82C285BAD00648A86 /* HomeWork5 */,
 				1901D2722C102441003F2A03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,16 +188,16 @@
 				19AA52E02C283EE000648A86 /* WidgetKit.framework */,
 				19AA52E12C283EE000648A86 /* SwiftUI.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
+			path = WBAppSUI/Frameworks;
 			sourceTree = "<group>";
 		};
-		19AA52E22C283EE600648A86 /* Frameworks */ = {
+		19AA52E82C285BAD00648A86 /* HomeWork5 */ = {
 			isa = PBXGroup;
 			children = (
-				19AA52E32C283EE600648A86 /* WidgetKit.framework */,
-				19AA52E42C283EE600648A86 /* SwiftUI.framework */,
+				19AA52E92C285BE700648A86 /* Factory.playground */,
 			);
-			path = Frameworks;
+			path = HomeWork5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
