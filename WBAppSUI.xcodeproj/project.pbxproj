@@ -12,8 +12,6 @@
 		1901D2792C102445003F2A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1901D2782C102445003F2A03 /* Assets.xcassets */; };
 		1901D27C2C102445003F2A03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1901D27B2C102445003F2A03 /* Preview Assets.xcassets */; };
 		193AC9262C1500E400B1B295 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193AC9252C1500E400B1B295 /* ContactsView.swift */; };
-		19741AF62C1EF9F700500147 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19741AF52C1EF9F700500147 /* WidgetKit.framework */; };
-		19741AF82C1EF9F700500147 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19741AF72C1EF9F700500147 /* SwiftUI.framework */; };
 		19741AFB2C1EF9F700500147 /* WBAppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19741AFA2C1EF9F700500147 /* WBAppWidgetBundle.swift */; };
 		19741AFF2C1EF9F700500147 /* WBAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19741AFE2C1EF9F700500147 /* WBAppWidget.swift */; };
 		19741B012C1EF9F700500147 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19741B002C1EF9F700500147 /* AppIntent.swift */; };
@@ -63,8 +61,6 @@
 		192E96372C2377760000FAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		193AC9252C1500E400B1B295 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		19741AF32C1EF9F700500147 /* WBAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WBAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		19741AF52C1EF9F700500147 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		19741AF72C1EF9F700500147 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		19741AFA2C1EF9F700500147 /* WBAppWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetBundle.swift; sourceTree = "<group>"; };
 		19741AFE2C1EF9F700500147 /* WBAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidget.swift; sourceTree = "<group>"; };
 		19741B002C1EF9F700500147 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
@@ -72,7 +68,11 @@
 		19741B042C1EF9FA00500147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1979FB3F2C199C7A00BBA397 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		19AA52D32C28279800648A86 /* WBAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetEntryView.swift; sourceTree = "<group>"; };
-		19AA52DE2C283A8700648A86 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Bank.playground; path = ../../Bank.playground; sourceTree = "<group>"; };
+		19AA52DE2C283A8700648A86 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Bank.playground; path = ../../Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		19AA52E02C283EE000648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		19AA52E12C283EE000648A86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		19AA52E32C283EE600648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		19AA52E42C283EE600648A86 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		19BBD6F52C158E7100352271 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		19CA45EE2C17577900FEA019 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		19E1C8EA2C145164000D5178 /* WalkthroughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughtView.swift; sourceTree = "<group>"; };
@@ -92,8 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19741AF82C1EF9F700500147 /* SwiftUI.framework in Frameworks */,
-				19741AF62C1EF9F700500147 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				1901D2732C102441003F2A03 /* WBAppSUI */,
-				19AA52DB2C28364B00648A86 /* HomeWork3 */,
+				19AA52E22C283EE600648A86 /* Frameworks */,
+				19741AF92C1EF9F700500147 /* WBAppWidget */,
+				19AA52DF2C283EE000648A86 /* Frameworks */,
 				19AA52DA2C28362200648A86 /* HomeWork4 */,
 				1901D2722C102441003F2A03 /* Products */,
 			);
@@ -139,16 +139,6 @@
 				1901D27B2C102445003F2A03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		19741AF42C1EF9F700500147 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				19741AF52C1EF9F700500147 /* WidgetKit.framework */,
-				19741AF72C1EF9F700500147 /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			path = ../../..;
 			sourceTree = "<group>";
 		};
 		19741AF92C1EF9F700500147 /* WBAppWidget */ = {
@@ -193,13 +183,22 @@
 			path = HomeWork4;
 			sourceTree = "<group>";
 		};
-		19AA52DB2C28364B00648A86 /* HomeWork3 */ = {
+		19AA52DF2C283EE000648A86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				19741AF92C1EF9F700500147 /* WBAppWidget */,
-				19741AF42C1EF9F700500147 /* Frameworks */,
+				19AA52E02C283EE000648A86 /* WidgetKit.framework */,
+				19AA52E12C283EE000648A86 /* SwiftUI.framework */,
 			);
-			path = HomeWork3;
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		19AA52E22C283EE600648A86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19AA52E32C283EE600648A86 /* WidgetKit.framework */,
+				19AA52E42C283EE600648A86 /* SwiftUI.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
