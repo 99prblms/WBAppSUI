@@ -20,6 +20,7 @@ struct TabBarView: View {
                     ContactsView()
                 case "2":
                     Text("Chats")
+                    StringInterpolationView()
                 case "3":
                     WalkthroughtView()
                 default:

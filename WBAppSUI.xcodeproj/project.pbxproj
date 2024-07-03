@@ -26,6 +26,8 @@
 		19E1C8EB2C145164000D5178 /* WalkthroughtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1C8EA2C145164000D5178 /* WalkthroughtView.swift */; };
 		19E1C8F02C147DE7000D5178 /* UserAgrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1C8EF2C147DE7000D5178 /* UserAgrView.swift */; };
 		19ECFC412C1107ED00CDE33A /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECFC402C1107EC00CDE33A /* VerificationView.swift */; };
+		19F9D06E2C2C58BC00958822 /* ExtensionStringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9D06D2C2C58BC00958822 /* ExtensionStringInterpolation.swift */; };
+		19F9D0712C2C5B0700958822 /* StringIntepolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F9D0702C2C5B0700958822 /* StringIntepolationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		19E1C8EA2C145164000D5178 /* WalkthroughtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughtView.swift; sourceTree = "<group>"; };
 		19E1C8EF2C147DE7000D5178 /* UserAgrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgrView.swift; sourceTree = "<group>"; };
 		19ECFC402C1107EC00CDE33A /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		19F9D06D2C2C58BC00958822 /* ExtensionStringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStringInterpolation.swift; sourceTree = "<group>"; };
+		19F9D0702C2C5B0700958822 /* StringIntepolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIntepolationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				192E96372C2377760000FAD4 /* Info.plist */,
 				1901D2742C102441003F2A03 /* WBAppSUIApp.swift */,
 				1901D2762C102441003F2A03 /* ContentView.swift */,
+				19F9D06F2C2C5A8000958822 /* HomeWork6 */,
 				1979FB3C2C199A0D00BBA397 /* HomeWork1 */,
 				1979FB3D2C199A4F00BBA397 /* HomeWork2 */,
 				1901D2782C102445003F2A03 /* Assets.xcassets */,
@@ -198,6 +203,15 @@
 				19AA52E92C285BE700648A86 /* Factory.playground */,
 			);
 			path = HomeWork5;
+			sourceTree = "<group>";
+		};
+		19F9D06F2C2C5A8000958822 /* HomeWork6 */ = {
+			isa = PBXGroup;
+			children = (
+				19F9D06D2C2C58BC00958822 /* ExtensionStringInterpolation.swift */,
+				19F9D0702C2C5B0700958822 /* StringIntepolationView.swift */,
+			);
+			path = HomeWork6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +319,9 @@
 				19E1C8F02C147DE7000D5178 /* UserAgrView.swift in Sources */,
 				1979FB402C199C7A00BBA397 /* ContactsModel.swift in Sources */,
 				19E1C8EB2C145164000D5178 /* WalkthroughtView.swift in Sources */,
+				19F9D0712C2C5B0700958822 /* StringIntepolationView.swift in Sources */,
 				19CA45EF2C17577900FEA019 /* ContactDetailView.swift in Sources */,
+				19F9D06E2C2C58BC00958822 /* ExtensionStringInterpolation.swift in Sources */,
 				19BBD6F62C158E7100352271 /* TabBarView.swift in Sources */,
 				19ECFC412C1107ED00CDE33A /* VerificationView.swift in Sources */,
 				193AC9262C1500E400B1B295 /* ContactsView.swift in Sources */,
