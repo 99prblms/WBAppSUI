@@ -18,7 +18,10 @@
 		19741B032C1EF9FA00500147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19741B022C1EF9FA00500147 /* Assets.xcassets */; };
 		19741B072C1EF9FA00500147 /* WBAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 19741AF32C1EF9F700500147 /* WBAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		19741B0B2C1F003C00500147 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979FB3F2C199C7A00BBA397 /* ContactsModel.swift */; };
+		1975976F2C3704590036742E /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975976E2C3704590036742E /* InfinityScrollView.swift */; };
 		1979FB402C199C7A00BBA397 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979FB3F2C199C7A00BBA397 /* ContactsModel.swift */; };
+		197ADCC32C503534002B4C2D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197ADCC22C503534002B4C2D /* ProfileView.swift */; };
+		197ADCC52C503735002B4C2D /* SMSVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197ADCC42C503735002B4C2D /* SMSVerificationView.swift */; };
 		19AA52D42C28279800648A86 /* WBAppWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AA52D32C28279800648A86 /* WBAppWidgetEntryView.swift */; };
 		19AA52D52C2828BD00648A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1901D2782C102445003F2A03 /* Assets.xcassets */; };
 		19BBD6F62C158E7100352271 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BBD6F52C158E7100352271 /* TabBarView.swift */; };
@@ -68,7 +71,14 @@
 		19741B002C1EF9F700500147 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		19741B022C1EF9FA00500147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19741B042C1EF9FA00500147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1975976E2C3704590036742E /* InfinityScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityScrollView.swift; sourceTree = "<group>"; };
 		1979FB3F2C199C7A00BBA397 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		197ADCC22C503534002B4C2D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		197ADCC42C503735002B4C2D /* SMSVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationView.swift; sourceTree = "<group>"; };
+		1988D2482C59446D00816B61 /* 2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 2.playground; path = ../../2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1988D2492C59447900816B61 /* 1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 1.playground; path = ../../1.playground; sourceTree = "<group>"; };
+		1988D24A2C59447900816B61 /* 4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 4.playground; path = ../../4.playground; sourceTree = "<group>"; };
+		1988D24B2C59447900816B61 /* 3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 3.playground; path = ../../3.playground; sourceTree = "<group>"; };
 		19AA52D32C28279800648A86 /* WBAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetEntryView.swift; sourceTree = "<group>"; };
 		19AA52DE2C283A8700648A86 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Bank.playground; path = ../../Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		19AA52E02C283EE000648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -104,6 +114,7 @@
 		1901D2682C102441003F2A03 = {
 			isa = PBXGroup;
 			children = (
+				19B243922C56664300DEF27B /* HomeWork12 */,
 				1901D2732C102441003F2A03 /* WBAppSUI */,
 				19741AF92C1EF9F700500147 /* WBAppWidget */,
 				19AA52DF2C283EE000648A86 /* Frameworks */,
@@ -125,6 +136,8 @@
 		1901D2732C102441003F2A03 /* WBAppSUI */ = {
 			isa = PBXGroup;
 			children = (
+				197ADCC12C5034FD002B4C2D /* HomeWork8 */,
+				197ADCBE2C502617002B4C2D /* HomeWork7 */,
 				192E96372C2377760000FAD4 /* Info.plist */,
 				1901D2742C102441003F2A03 /* WBAppSUIApp.swift */,
 				1901D2762C102441003F2A03 /* ContentView.swift */,
@@ -163,6 +176,7 @@
 			children = (
 				19E1C8EA2C145164000D5178 /* WalkthroughtView.swift */,
 				19ECFC402C1107EC00CDE33A /* VerificationView.swift */,
+				197ADCC42C503735002B4C2D /* SMSVerificationView.swift */,
 				19E1C8EF2C147DE7000D5178 /* UserAgrView.swift */,
 			);
 			path = HomeWork1;
@@ -177,6 +191,22 @@
 				19BBD6F52C158E7100352271 /* TabBarView.swift */,
 			);
 			path = HomeWork2;
+			sourceTree = "<group>";
+		};
+		197ADCBE2C502617002B4C2D /* HomeWork7 */ = {
+			isa = PBXGroup;
+			children = (
+				1975976E2C3704590036742E /* InfinityScrollView.swift */,
+			);
+			path = HomeWork7;
+			sourceTree = "<group>";
+		};
+		197ADCC12C5034FD002B4C2D /* HomeWork8 */ = {
+			isa = PBXGroup;
+			children = (
+				197ADCC22C503534002B4C2D /* ProfileView.swift */,
+			);
+			path = HomeWork8;
 			sourceTree = "<group>";
 		};
 		19AA52DA2C28362200648A86 /* HomeWork4 */ = {
@@ -203,6 +233,17 @@
 				19AA52E92C285BE700648A86 /* Factory.playground */,
 			);
 			path = HomeWork5;
+			sourceTree = "<group>";
+		};
+		19B243922C56664300DEF27B /* HomeWork12 */ = {
+			isa = PBXGroup;
+			children = (
+				1988D2492C59447900816B61 /* 1.playground */,
+				1988D24B2C59447900816B61 /* 3.playground */,
+				1988D24A2C59447900816B61 /* 4.playground */,
+				1988D2482C59446D00816B61 /* 2.playground */,
+			);
+			path = HomeWork12;
 			sourceTree = "<group>";
 		};
 		19F9D06F2C2C5A8000958822 /* HomeWork6 */ = {
@@ -317,10 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E1C8F02C147DE7000D5178 /* UserAgrView.swift in Sources */,
+				197ADCC32C503534002B4C2D /* ProfileView.swift in Sources */,
 				1979FB402C199C7A00BBA397 /* ContactsModel.swift in Sources */,
 				19E1C8EB2C145164000D5178 /* WalkthroughtView.swift in Sources */,
+				1975976F2C3704590036742E /* InfinityScrollView.swift in Sources */,
 				19F9D0712C2C5B0700958822 /* StringIntepolationView.swift in Sources */,
 				19CA45EF2C17577900FEA019 /* ContactDetailView.swift in Sources */,
+				197ADCC52C503735002B4C2D /* SMSVerificationView.swift in Sources */,
 				19F9D06E2C2C58BC00958822 /* ExtensionStringInterpolation.swift in Sources */,
 				19BBD6F62C158E7100352271 /* TabBarView.swift in Sources */,
 				19ECFC412C1107ED00CDE33A /* VerificationView.swift in Sources */,
