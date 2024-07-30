@@ -79,6 +79,7 @@
 		1988D2492C59447900816B61 /* 1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 1.playground; path = ../../1.playground; sourceTree = "<group>"; };
 		1988D24A2C59447900816B61 /* 4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 4.playground; path = ../../4.playground; sourceTree = "<group>"; };
 		1988D24B2C59447900816B61 /* 3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = 3.playground; path = ../../3.playground; sourceTree = "<group>"; };
+		1988D24C2C594A0A00816B61 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = Modules/UISystem; sourceTree = "<group>"; };
 		19AA52D32C28279800648A86 /* WBAppWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAppWidgetEntryView.swift; sourceTree = "<group>"; };
 		19AA52DE2C283A8700648A86 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Bank.playground; path = ../../Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		19AA52E02C283EE000648A86 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -114,6 +115,7 @@
 		1901D2682C102441003F2A03 = {
 			isa = PBXGroup;
 			children = (
+				1988D24C2C594A0A00816B61 /* UISystem */,
 				19B243922C56664300DEF27B /* HomeWork12 */,
 				1901D2732C102441003F2A03 /* WBAppSUI */,
 				19741AF92C1EF9F700500147 /* WBAppWidget */,
